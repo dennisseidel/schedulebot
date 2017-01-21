@@ -14,7 +14,7 @@ else
 fi
 
 if [ ! -d "$current_dir/web-interface" ]; then
-  git clone https://github.com/dennisseidel/auth-service.git $current_dir/web-interface
+  git clone https://github.com/dennisseidel/web-interface-schedulebot.git $current_dir/web-interface
 else
   cd $current_dir/web-interface/ && git pull 
 fi
