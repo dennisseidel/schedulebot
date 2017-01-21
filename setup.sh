@@ -18,3 +18,9 @@ if [ ! -d "$current_dir/web-interface" ]; then
 else
   cd $current_dir/web-interface/ && git pull 
 fi
+
+if [ ! -d "$current_dir/employee-mock-service" ]; then
+  git clone https://github.com/dennisseidel/employee-mock-service-schedulebot.git $current_dir/employee-mock-service
+else
+  cd $current_dir/employee-mock-service/ && git pull 
+fi
